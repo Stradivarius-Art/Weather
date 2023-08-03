@@ -3,6 +3,8 @@
 namespace Plasma\Models;
 
 class Result{
+    private string $region;
+    private string $localtime;
     private float| int $fahrenheit;
     private float| int $celsius;
 
@@ -31,6 +33,32 @@ class Result{
     return $this->celsius;
   
  }
+
+ public function setregion(string $region): Result
+ {
+     $this->region = $region;
+     return $this;
+ }
+
+ public function getregion(): string
+ {
+    return $this->region;
+  
+ }
+
+ public function setlocaltime(string $localtime): Result
+ {
+     $this->localtime = $localtime;
+     return $this;
+ }
+
+ public function getlocaltime(): string
+ {
+    return $this->localtime;
+  
+ }
+
+
 }
 
 ?>

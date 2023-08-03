@@ -26,9 +26,10 @@ class Weather{
 
        return (new Result())
        ->setCelsius(Arr::get($data, 'current.temp_c', 0))
-       -> setFahrenheit(Arr::get($data, 'current.temp_f', 0));
+       -> setFahrenheit(Arr::get($data, 'current.temp_f', 0))
+       ->setregion(Arr::get($data, 'location.region', 1))
+       ->setlocaltime(Arr::get($data, 'location.localtime', 1));
 
-    //    dd($data['current'] ['temp_c'], $data['current'] ['temp_f']);
      }
 }
 
