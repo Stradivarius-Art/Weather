@@ -1,0 +1,6 @@
+use Plasma\Weather\Weather;
+
+$m = new Weather($apikey);
+
+$g = $m->location('Volgograd')-> get();
+$g->cel();
