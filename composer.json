@@ -1,5 +1,6 @@
 {
     "name": "artem/weather",
+    "version": "1.0.0",
     "description": "Package for getting weather for my location",
     "type": "library",
     "license": "MIT",
